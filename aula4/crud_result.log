@@ -1,0 +1,42 @@
+=== INICIANDO TESTE CRUD DA API DE FROTAS ===
+
+--- 1. CADASTRANDO VEÍCULO 1 ---
+{
+  "id": 3,
+  "placa": "ABC-9999",
+  "montadora": "Scania",
+  "modelo": "R500",
+  "status": "DISPONIVEL"
+}
+
+
+--- 2. CADASTRANDO VEÍCULO 2 ---
+{
+  "id": 4,
+  "placa": "XYZ-7777",
+  "montadora": "Volvo",
+  "modelo": "FH 460",
+  "status": "DISPONIVEL"
+}
+
+
+--- 3. ATUALIZANDO STATUS DO VEÍCULO 3 (PATCH) ---
+{
+  "mensagem": "Status atualizado com sucesso!",
+  "veiculo": {
+    "id": 3,
+    "placa": "ABC-9999",
+    "montadora": "Scania",
+    "modelo": "R500",
+    "status": "EM_ROTA"
+  }
+}
+
+
+--- 4. DELETANDO VEÍCULO 4 (DELETE) ---
+{
+  "mensagem": "Veiculo ID 4 removido com sucesso."
+}
+
+
+=== TESTE FINALIZADO! LOG SALVO EM crud_result.log ===

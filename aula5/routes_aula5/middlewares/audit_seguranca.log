@@ -1,0 +1,56 @@
+=== INICIANDO TESTE DE SEGURANÇA ===
+Data do teste: Fri Aug  7 11:02:37 PM UTC 2026
+-----------------------------------
+Tentativa 1 (Sem chave):
+HTTP/1.1 401 Unauthorized
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 72
+ETag: W/"48-KbvcCxxh1+KFHOhmWe4NsKQUbvQ"
+Date: Fri, 07 Aug 2026 23:02:37 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"erro":"Acesso nao autorizado. Header 'X-API-KEY' invalido ou ausente"}
+-----------------------------------
+Tentativa 2 (Sem chave):
+HTTP/1.1 401 Unauthorized
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 72
+ETag: W/"48-KbvcCxxh1+KFHOhmWe4NsKQUbvQ"
+Date: Fri, 07 Aug 2026 23:02:37 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"erro":"Acesso nao autorizado. Header 'X-API-KEY' invalido ou ausente"}
+-----------------------------------
+Tentativa 3 (Sem chave):
+HTTP/1.1 401 Unauthorized
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 72
+ETag: W/"48-KbvcCxxh1+KFHOhmWe4NsKQUbvQ"
+Date: Fri, 07 Aug 2026 23:02:37 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"erro":"Acesso nao autorizado. Header 'X-API-KEY' invalido ou ausente"}
+-----------------------------------
+Tentativa 4 (Com chave válida):
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 160
+ETag: W/"a0-fH9vxH+yfAEUU9gtJMPiw0RqGus"
+Date: Fri, 07 Aug 2026 23:02:37 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+[{"id":1,"nome":"Carlos Silva","cnh":"12345678900","categoria":"E","ativo":true},{"id":2,"nome":"Ana Pereira","cnh":"98765432100","categoria":"D","ativo":true}]
+-----------------------------------
+=== TESTE FINALIZADO ===
