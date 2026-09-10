@@ -8,7 +8,7 @@ const motoristasRouter = require('./motoristas');
 const manutencoesRouter = require('./manutencoes'); // 1. Import do novo roteador
 
 const app = express();
-const PORT = 3000;
+const PORT = 3030;
 
 // Middlewares Globais
 app.use(cors());

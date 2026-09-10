@@ -6,7 +6,7 @@ const scaniaRoutes = require('./src/routers/scaniaRoutes');
 const mercedesRoutes = require('./src/routers/mercedesRoutes'); // <- NOVO (Exercício 02)
 
 const app = express();
-const PORT = 3000;
+const PORT = 3030;
 
 // Middlewares
 app.use(cors());
