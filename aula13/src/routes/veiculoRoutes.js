@@ -7,4 +7,3 @@ const validarRequisicao = require('../middlewares/validarRequisicao');
 router.post('/', regrasCadastroVeiculo, validarRequisicao, veiculoController.cadastrar);
 
 module.exports = router;
-
