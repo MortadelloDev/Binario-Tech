@@ -1,3 +1,1 @@
-ps aux | grep node
-
-
+ps aux | grep node > processos.log
