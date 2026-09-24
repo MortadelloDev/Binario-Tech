@@ -1,0 +1,14 @@
+{
+"name": "aula19-pm2",
+"version": "1.0.0",
+"description": "Gerenciamento de Processos e PM2 - Binario Tech",
+"main": "server.js",
+"scripts": {
+	"start": "node server.js",
+	"mortadello": "bash /home/natan.carmo/Binario-Tech/aula19/processos_pm2.sh"
+	},
+	"dependencies": {
+	 "dotenv": "^16.4.5",
+	 "express": "^4.19.2"
+	}
+}

@@ -1,0 +1,44 @@
+┌────┬────────────────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name                   │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0  │ api-telemetria-dev     │ default     │ 1.0.0   │ fork    │ 375606   │ 0s     │ 5    │ online    │ 100%     │ 45.1mb   │ natan.c… │ enabled  │
+│ 1  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368610   │ 8m     │ 1    │ online    │ 0%       │ 64.6mb   │ natan.c… │ disabled │
+│ 2  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368611   │ 8m     │ 1    │ online    │ 0%       │ 64.3mb   │ natan.c… │ disabled │
+│ 3  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368645   │ 8m     │ 1    │ online    │ 0%       │ 65.0mb   │ natan.c… │ disabled │
+│ 4  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368646   │ 8m     │ 1    │ online    │ 0%       │ 63.5mb   │ natan.c… │ disabled │
+│ 5  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368669   │ 8m     │ 1    │ online    │ 0%       │ 64.0mb   │ natan.c… │ disabled │
+│ 6  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368670   │ 8m     │ 1    │ online    │ 0%       │ 64.5mb   │ natan.c… │ disabled │
+│ 7  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368693   │ 8m     │ 1    │ online    │ 0%       │ 64.2mb   │ natan.c… │ disabled │
+│ 8  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368694   │ 8m     │ 1    │ online    │ 0%       │ 64.3mb   │ natan.c… │ disabled │
+│ 9  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368717   │ 8m     │ 1    │ online    │ 0%       │ 64.6mb   │ natan.c… │ disabled │
+│ 10 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368718   │ 8m     │ 1    │ online    │ 0%       │ 64.4mb   │ natan.c… │ disabled │
+│ 11 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368742   │ 8m     │ 1    │ online    │ 0%       │ 64.1mb   │ natan.c… │ disabled │
+│ 12 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368743   │ 8m     │ 1    │ online    │ 0%       │ 63.8mb   │ natan.c… │ disabled │
+│ 13 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368766   │ 8m     │ 1    │ online    │ 0%       │ 64.5mb   │ natan.c… │ disabled │
+│ 14 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368767   │ 8m     │ 1    │ online    │ 0%       │ 63.7mb   │ natan.c… │ disabled │
+│ 15 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368790   │ 8m     │ 1    │ online    │ 0%       │ 65.5mb   │ natan.c… │ disabled │
+│ 16 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368791   │ 8m     │ 1    │ online    │ 0%       │ 63.7mb   │ natan.c… │ disabled │
+└────┴────────────────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 2.3% | ram usage: 7.2% | eno8303: ⇓ 0.026mb/s ⇑ 0.021mb/s drop 12/min | disk: ⇓ 0mb/s ⇑ 0.062mb/s
+┌────┬────────────────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name                   │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0  │ api-telemetria-dev     │ default     │ 1.0.0   │ fork    │ 404644   │ 44s    │ 11   │ online    │ 0%       │ 61.6mb   │ natan.c… │ enabled  │
+│ 1  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368610   │ 41m    │ 1    │ online    │ 0%       │ 64.7mb   │ natan.c… │ disabled │
+│ 2  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368611   │ 41m    │ 1    │ online    │ 0%       │ 65.0mb   │ natan.c… │ disabled │
+│ 3  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368645   │ 41m    │ 1    │ online    │ 0%       │ 65.9mb   │ natan.c… │ disabled │
+│ 4  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368646   │ 41m    │ 1    │ online    │ 0%       │ 64.1mb   │ natan.c… │ disabled │
+│ 5  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368669   │ 41m    │ 1    │ online    │ 0%       │ 64.1mb   │ natan.c… │ disabled │
+│ 6  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368670   │ 41m    │ 1    │ online    │ 0%       │ 65.4mb   │ natan.c… │ disabled │
+│ 7  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368693   │ 41m    │ 1    │ online    │ 0%       │ 65.6mb   │ natan.c… │ disabled │
+│ 8  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368694   │ 41m    │ 1    │ online    │ 0%       │ 64.9mb   │ natan.c… │ disabled │
+│ 9  │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368717   │ 41m    │ 1    │ online    │ 0%       │ 65.9mb   │ natan.c… │ disabled │
+│ 10 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368718   │ 41m    │ 1    │ online    │ 0%       │ 65.6mb   │ natan.c… │ disabled │
+│ 11 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368742   │ 41m    │ 1    │ online    │ 0%       │ 65.0mb   │ natan.c… │ disabled │
+│ 12 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368743   │ 41m    │ 1    │ online    │ 0%       │ 64.6mb   │ natan.c… │ disabled │
+│ 13 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368766   │ 41m    │ 1    │ online    │ 0%       │ 65.1mb   │ natan.c… │ disabled │
+│ 14 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368767   │ 41m    │ 1    │ online    │ 0%       │ 64.5mb   │ natan.c… │ disabled │
+│ 15 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368790   │ 41m    │ 1    │ online    │ 0%       │ 65.1mb   │ natan.c… │ disabled │
+│ 16 │ api-telemetria-prod    │ default     │ 1.0.0   │ cluster │ 368791   │ 41m    │ 1    │ online    │ 0%       │ 64.6mb   │ natan.c… │ disabled │
+└────┴────────────────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+host metrics | cpu: 1.9% | ram usage: 7.2% | eno8303: ⇓ 0.035mb/s ⇑ 0.434mb/s drop 12/min | disk: ⇓ 0mb/s ⇑ 0.361mb/s
