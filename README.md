@@ -26,4 +26,6 @@ Change-Log (26/09/2026)
 - Criado e terminado projeto da Aula21
 - Mudado a versão da API do server.js para 1.0.1
 - Criado um GitHook
+- Criado e terminado projeto da Aula22
+- Configurado Docker
 -----------------------------------------------------------------------------
