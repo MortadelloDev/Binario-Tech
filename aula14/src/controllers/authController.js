@@ -10,10 +10,19 @@ const authController = {
     try {
       const { email, senha, perfil } = req.body;
 
+      // 1. Verifica se os campos obrigatórios foram fornecidos
       if (!email || !senha) {
         return res.status(400).json({ mensagem: "Email e senha são obrigatórios." });
       }
 
+      // 2. Validação: Senha com menos de 6 caracteres (Exercício 3)
+      if (senha.length < 6) {
+        return res.status(400).json({ 
+          mensagem: "A senha deve conter no mínimo 6 caracteres." 
+        });
+      }
+
+      // 3. Verifica se o utilizador já se encontra registado
       const usuarioExiste = usuariosDB.find(u => u.email === email);
       if (usuarioExiste) {
         return res.status(400).json({ mensagem: "Usuário já cadastrado." });
@@ -21,11 +30,20 @@ const authController = {
 
       // Criptografar a senha com salt (fator de custo 10)
       const senhaHash = await bcrypt.hash(senha, 10);
+
+      const novoUsuario = { 
+        id: usuariosDB.length + 1, 
+        email, 
+        senhaHash, 
+        perfil: perfil || 'OPERADOR' 
+      };
       
-      const novoUsuario = { id: usuariosDB.length + 1, email, senhaHash, perfil: perfil || 'OPERADOR' };
       usuariosDB.push(novoUsuario);
 
-      res.status(201).json({ mensagem: "Usuário registrado com sucesso!", usuarioId: novoUsuario.id });
+      res.status(201).json({ 
+        mensagem: "Usuário registrado com sucesso!", 
+        usuarioId: novoUsuario.id 
+      });
     } catch (erro) {
       res.status(500).json({ erro: "Erro ao registrar usuário." });
     }
@@ -47,11 +65,11 @@ const authController = {
         return res.status(401).json({ mensagem: "Credenciais inválidas." });
       }
 
-      // Gerar o token JWT (expira em 1 hora)
+      // Gerar o token JWT com expiração em 15 segundos (Exercício 2)
       const token = jwt.sign(
         { id: usuario.id, email: usuario.email, perfil: usuario.perfil },
         process.env.JWT_SECRET,
-        { expiresIn: '1h' }
+        { expiresIn: '15s' }
       );
 
       res.status(200).json({ status: "AUTENTICADO", token });
