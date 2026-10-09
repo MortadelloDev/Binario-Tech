@@ -10,31 +10,45 @@ app.use(express.json());
 
 const client = createClient({ url: REDIS_URL });
 
-client.on('error', (err) => console.error('\[Erro Redis\]', err));
+client.on('error', (err) => console.error('[Erro Redis]', err));
 
 async function init() {
-await client.connect();
-console.log('\[Binário Tech\] Conectado ao servidor Redis com sucesso!');
+  await client.connect();
+  console.log('[Binário Tech] Conectado ao servidor Redis com sucesso!');
 }
 
 init();
 
 // Rota com contador de acessos via Redis
 app.get('/api/v1/visitas', async (req, res) => {
-try {
-const visitas = await client.incr('contador_visitas');
-res.json({
-status: "SUCESSO",
-mensagem: "Contador atualizado no Redis com sucesso!",
-totalVisitas: visitas,
-instanciaHost: require('os').hostname(),
-timestamp: new Date()
+  try {
+    const visitas = await client.incr('contador_visitas');
+    res.json({
+      status: "SUCESSO",
+      mensagem: "Contador atualizado no Redis com sucesso!",
+      totalVisitas: visitas,
+      instanciaHost: require('os').hostname(),
+      timestamp: new Date()
+    });
+  } catch (error) {
+    res.status(500).json({ status: "ERRO", mensagem: error.message });
+  }
 });
-} catch (error) {
-res.status(500).json({ status: "ERRO", mensagem: error.message });
-}
+
+// EXERCÍCIO 1: Rota para resetar o contador no Redis
+app.delete('/api/v1/visitas/reset', async (req, res) => {
+  try {
+    await client.del('contador_visitas');
+    res.json({
+      status: "SUCESSO",
+      mensagem: "Contador de visitas resetado com sucesso!",
+      timestamp: new Date()
+    });
+  } catch (error) {
+    res.status(500).json({ status: "ERRO", mensagem: error.message });
+  }
 });
 
 app.listen(PORT, () => {
-console.log(`[Binário Tech] API Orquestrada rodando na porta ${PORT}`);
+  console.log(`[Binário Tech] API Orquestrada rodando na porta ${PORT}`);
 });
