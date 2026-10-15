@@ -1,0 +1,55 @@
+=== INICIANDO TESTE CRUD DA API DE FROTAS (qui 15 out 2026 13:46:44 -03) ===
+
+--- 1. CADASTRANDO VEÍCULO 1 ---
+{
+  "id": 3,
+  "placa": "ABC-9999",
+  "montadora": "Scania",
+  "modelo": "R500",
+  "status": "DISPONIVEL"
+}
+
+
+--- 2. CADASTRANDO VEÍCULO 2 ---
+{
+  "id": 4,
+  "placa": "XYZ-7777",
+  "montadora": "Volvo",
+  "modelo": "FH 460",
+  "status": "DISPONIVEL"
+}
+
+
+--- 3. ATUALIZANDO STATUS DO VEÍCULO 3 (PATCH) ---
+{
+  "mensagem": "Status atualizado com sucesso!",
+  "veiculo": {
+    "id": 3,
+    "placa": "ABC-9999",
+    "montadora": "Scania",
+    "modelo": "R500",
+    "status": "EM_ROTA"
+  }
+}
+
+
+ SUBSTITUIÇÃO VIA PUT 
+{
+  "mensagem": "Veículo atualizado por completo com sucesso!",
+  "veiculo": {
+    "id": 2,
+    "placa": "SCA-5000",
+    "montadora": "Scania",
+    "modelo": "R500 Super",
+    "status": "DISPONIVEL"
+  }
+}
+
+
+--- 4. DELETANDO VEÍCULO 4 (DELETE) ---
+{
+  "mensagem": "Veiculo ID 4 removido com sucesso."
+}
+
+
+=== TESTE FINALIZADO EM qui 15 out 2026 13:46:44 -03! LOG SALVO EM crud_result.log ===

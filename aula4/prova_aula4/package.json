@@ -1,0 +1,14 @@
+{
+  "name": "aula4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "frota_api.js",
+  "scripts": {
+	"start": "node server.js"
+	},
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
